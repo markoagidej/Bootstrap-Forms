@@ -9,8 +9,74 @@
     </head>
     <body>        
 <!-- Task 1: Implement a multi-column form layout using Bootstrap's grid system.= -->
-        <form>
-
+        <form class="container my-5">
+            <div class="row my-4 g-3 g-lg-4">
+                <div class="col-12 col-md-4">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="first-name" name="first-name" placeholder="First Name">
+                        <label for="first-name">First Name</label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="middle-name" name="middle-name" placeholder="Middle Name">
+                        <label for="middle-name">Middle Name</label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Last Name">
+                        <label for="last-name">Last Name</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-12 col-md-6">
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="confirm-email" name="confirm-email" placeholder="Confirm Email">
+                        <label for="confirm-email">Confirm Email</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-12 col-md-6">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+                        <label for="username">Username</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-12 col-md-6">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="password" name="password" placeholder="Password">
+                        <label for="password">Password</label>
+                        <small class="m-1">Must contain letters, numbers, and symbols</small>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="confirm-password" name="confirm-password" placeholder="Confirm Password">
+                        <label for="confirm-password">Confirm Password</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-8 col-md-4">
+                    <select class="form-select" aria-label="Country Selector">
+                        <option selected>Choose you country</option>
+                        <option value="1">USA</option>
+                        <option value="1">Everywhere else</option>
+                    </select>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary">Submit</button>
         </form>
 <!-- Task 2: Create an inline form layout for a contact form. -->
         <form>
