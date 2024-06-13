@@ -102,8 +102,29 @@
         </form>
 <!-- Task 3: Implement a stacked form layout with labels above input fields. -->
         <hr>
-        <form>
-
+        <form class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-9 col-md-6">
+                    <div class="my-3">
+                        <label for="first-name">First Name</label>
+                        <input type="text" class="form-control" id="first-name" name="first-name" placeholder="First Name">
+                    </div>
+                    <div class="my-3">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Last Name">
+                    </div>
+                    <div class="my-4">
+                        <select class="form-select" aria-label="Country Selector">
+                            <option selected>Choose you country</option>
+                            <option value="1">USA</option>
+                            <option value="1">Everywhere else</option>
+                        </select>
+                    </div>
+                    <div class="my-3">
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
         </form>
     </body>
 </html>
