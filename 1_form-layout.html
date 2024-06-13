@@ -79,10 +79,29 @@
             <button type="button" class="btn btn-primary">Submit</button>
         </form>
 <!-- Task 2: Create an inline form layout for a contact form. -->
-        <form>
-
+        <hr>
+        <form class="container my-5">
+            <div class="row row-cols-md-4 g-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="full-name" name="full-name" placeholder="Full Name">
+                    <label for="full-name">Full Name</label>
+                </div>
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-floating">
+                    <select class="form-select" aria-label="Country Selector">
+                        <option selected>Choose you country</option>
+                        <option value="1">USA</option>
+                        <option value="1">Everywhere else</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
         </form>
 <!-- Task 3: Implement a stacked form layout with labels above input fields. -->
+        <hr>
         <form>
 
         </form>
